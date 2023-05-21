@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		84095F351A2A9F3800956141 /* CMacsTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 84095F341A2A9F3800956141 /* CMacsTests.m */; };
+		84095F351A2A9F3800956141 /* macos-cross-mac-tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 84095F341A2A9F3800956141 /* macos-cross-mac-tests.m */; };
 		84095F421A2AA46500956141 /* AppKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 84095F411A2AA46500956141 /* AppKit.framework */; };
 		84095F441A2AA46A00956141 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 84095F431A2AA46A00956141 /* Foundation.framework */; };
 		84095F4A1A2AA62000956141 /* AppDelegate.c in Sources */ = {isa = PBXBuildFile; fileRef = 84095F211A2A9F3800956141 /* AppDelegate.c */; };
@@ -26,16 +26,16 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		84095F1B1A2A9F3800956141 /* CMacs.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CMacs.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		84095F1B1A2A9F3800956141 /* macos-cross-mac.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "macos-cross-mac.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		84095F211A2A9F3800956141 /* AppDelegate.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = AppDelegate.c; sourceTree = "<group>"; };
-		84095F2E1A2A9F3800956141 /* CMacsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CMacsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		84095F2E1A2A9F3800956141 /* macos-cross-macTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "macos-cross-macTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		84095F331A2A9F3800956141 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		84095F341A2A9F3800956141 /* CMacsTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CMacsTests.m; sourceTree = "<group>"; };
+		84095F341A2A9F3800956141 /* macos-cross-mac-tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "macos-cross-mac-tests.m"; sourceTree = "<group>"; };
 		84095F3E1A2A9F5D00956141 /* View.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = View.c; sourceTree = "<group>"; };
 		84095F401A2AA0D600956141 /* CMacsTypes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CMacsTypes.h; sourceTree = "<group>"; };
 		84095F411A2AA46500956141 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
 		84095F431A2AA46A00956141 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
-		84095F461A2AA4A900956141 /* CMacs-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "CMacs-Info.plist"; sourceTree = "<group>"; };
+		84095F461A2AA4A900956141 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		84095F471A2AA4A900956141 /* CMacs-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "CMacs-Prefix.pch"; sourceTree = "<group>"; };
 		84095F4C1A2AA72D00956141 /* CMacsTypes.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = CMacsTypes.c; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -72,8 +72,8 @@
 		84095F1C1A2A9F3800956141 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				84095F1B1A2A9F3800956141 /* CMacs.app */,
-				84095F2E1A2A9F3800956141 /* CMacsTests.xctest */,
+				84095F1B1A2A9F3800956141 /* macos-cross-mac.app */,
+				84095F2E1A2A9F3800956141 /* macos-cross-macTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -94,7 +94,7 @@
 		84095F1E1A2A9F3800956141 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				84095F461A2AA4A900956141 /* CMacs-Info.plist */,
+				84095F461A2AA4A900956141 /* Info.plist */,
 				84095F471A2AA4A900956141 /* CMacs-Prefix.pch */,
 			);
 			name = "Supporting Files";
@@ -103,7 +103,7 @@
 		84095F311A2A9F3800956141 /* CMacsTests */ = {
 			isa = PBXGroup;
 			children = (
-				84095F341A2A9F3800956141 /* CMacsTests.m */,
+				84095F341A2A9F3800956141 /* macos-cross-mac-tests.m */,
 				84095F321A2A9F3800956141 /* Supporting Files */,
 			);
 			path = CMacsTests;
@@ -129,9 +129,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		84095F1A1A2A9F3800956141 /* CMacs */ = {
+		84095F1A1A2A9F3800956141 /* macos-cross-mac */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 84095F381A2A9F3800956141 /* Build configuration list for PBXNativeTarget "CMacs" */;
+			buildConfigurationList = 84095F381A2A9F3800956141 /* Build configuration list for PBXNativeTarget "macos-cross-mac" */;
 			buildPhases = (
 				84095F171A2A9F3800956141 /* Sources */,
 				84095F181A2A9F3800956141 /* Frameworks */,
@@ -141,14 +141,14 @@
 			);
 			dependencies = (
 			);
-			name = CMacs;
+			name = "macos-cross-mac";
 			productName = CMacs;
-			productReference = 84095F1B1A2A9F3800956141 /* CMacs.app */;
+			productReference = 84095F1B1A2A9F3800956141 /* macos-cross-mac.app */;
 			productType = "com.apple.product-type.application";
 		};
-		84095F2D1A2A9F3800956141 /* CMacsTests */ = {
+		84095F2D1A2A9F3800956141 /* macos-cross-macTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 84095F3B1A2A9F3800956141 /* Build configuration list for PBXNativeTarget "CMacsTests" */;
+			buildConfigurationList = 84095F3B1A2A9F3800956141 /* Build configuration list for PBXNativeTarget "macos-cross-macTests" */;
 			buildPhases = (
 				84095F2A1A2A9F3800956141 /* Sources */,
 				84095F2B1A2A9F3800956141 /* Frameworks */,
@@ -159,9 +159,9 @@
 			dependencies = (
 				84095F301A2A9F3800956141 /* PBXTargetDependency */,
 			);
-			name = CMacsTests;
+			name = "macos-cross-macTests";
 			productName = CMacsTests;
-			productReference = 84095F2E1A2A9F3800956141 /* CMacsTests.xctest */;
+			productReference = 84095F2E1A2A9F3800956141 /* macos-cross-macTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
@@ -175,18 +175,23 @@
 				TargetAttributes = {
 					84095F1A1A2A9F3800956141 = {
 						CreatedOnToolsVersion = 6.2;
+						DevelopmentTeam = QP9MSC9X74;
+						ProvisioningStyle = Automatic;
 					};
 					84095F2D1A2A9F3800956141 = {
 						CreatedOnToolsVersion = 6.2;
+						DevelopmentTeam = QP9MSC9X74;
+						ProvisioningStyle = Automatic;
 						TestTargetID = 84095F1A1A2A9F3800956141;
 					};
 				};
 			};
-			buildConfigurationList = 84095F161A2A9F3800956141 /* Build configuration list for PBXProject "CMacs" */;
+			buildConfigurationList = 84095F161A2A9F3800956141 /* Build configuration list for PBXProject "macos-cross-mac" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 				Base,
 			);
@@ -195,8 +200,8 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				84095F1A1A2A9F3800956141 /* CMacs */,
-				84095F2D1A2A9F3800956141 /* CMacsTests */,
+				84095F1A1A2A9F3800956141 /* macos-cross-mac */,
+				84095F2D1A2A9F3800956141 /* macos-cross-macTests */,
 			);
 		};
 /* End PBXProject section */
@@ -233,7 +238,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				84095F351A2A9F3800956141 /* CMacsTests.m in Sources */,
+				84095F351A2A9F3800956141 /* macos-cross-mac-tests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -242,7 +247,7 @@
 /* Begin PBXTargetDependency section */
 		84095F301A2A9F3800956141 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 84095F1A1A2A9F3800956141 /* CMacs */;
+			target = 84095F1A1A2A9F3800956141 /* macos-cross-mac */;
 			targetProxy = 84095F2F1A2A9F3800956141 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -328,11 +333,16 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
-				INFOPLIST_FILE = "CMacs/CMacs-Info.plist";
-				INFOPLIST_PREFIX_HEADER = "CMacs/CMacs-Prefix.pch";
+				DEVELOPMENT_TEAM = QP9MSC9X74;
+				INFOPLIST_FILE = "/Volumes/git/macos-cross/macos-cross-mac/CMacs/Info.plist";
+				INFOPLIST_PREFIX_HEADER = "/Volumes/git/macos-cross/macos-cross-mac/CMacs/CMacs-Prefix.pch";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "macos-cross-mac.bitcoincore.dev";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 			};
 			name = Debug;
 		};
@@ -340,11 +350,16 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
-				INFOPLIST_FILE = "CMacs/CMacs-Info.plist";
-				INFOPLIST_PREFIX_HEADER = "CMacs/CMacs-Prefix.pch";
+				DEVELOPMENT_TEAM = QP9MSC9X74;
+				INFOPLIST_FILE = "/Volumes/git/macos-cross/macos-cross-mac/CMacs/Info.plist";
+				INFOPLIST_PREFIX_HEADER = "/Volumes/git/macos-cross/macos-cross-mac/CMacs/CMacs-Prefix.pch";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "macos-cross-mac.bitcoincore.dev";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 			};
 			name = Release;
 		};
@@ -352,7 +367,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = QP9MSC9X74;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(DEVELOPER_FRAMEWORKS_DIR)",
 					"$(inherited)",
@@ -361,10 +379,11 @@
 					"DEBUG=1",
 					"$(inherited)",
 				);
-				INFOPLIST_FILE = CMacsTests/Info.plist;
+				INFOPLIST_FILE = "/Volumes/git/macos-cross/macos-cross-mac/CMacsTests/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CMacs.app/Contents/MacOS/CMacs";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/macos-cross-mac.app/Contents/MacOS/macos-cross-mac";
 			};
 			name = Debug;
 		};
@@ -372,22 +391,26 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = QP9MSC9X74;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(DEVELOPER_FRAMEWORKS_DIR)",
 					"$(inherited)",
 				);
-				INFOPLIST_FILE = CMacsTests/Info.plist;
+				INFOPLIST_FILE = "/Volumes/git/macos-cross/macos-cross-mac/CMacsTests/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CMacs.app/Contents/MacOS/CMacs";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/macos-cross-mac.app/Contents/MacOS/macos-cross-mac";
 			};
 			name = Release;
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		84095F161A2A9F3800956141 /* Build configuration list for PBXProject "CMacs" */ = {
+		84095F161A2A9F3800956141 /* Build configuration list for PBXProject "macos-cross-mac" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				84095F361A2A9F3800956141 /* Debug */,
@@ -396,7 +419,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		84095F381A2A9F3800956141 /* Build configuration list for PBXNativeTarget "CMacs" */ = {
+		84095F381A2A9F3800956141 /* Build configuration list for PBXNativeTarget "macos-cross-mac" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				84095F391A2A9F3800956141 /* Debug */,
@@ -405,7 +428,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		84095F3B1A2A9F3800956141 /* Build configuration list for PBXNativeTarget "CMacsTests" */ = {
+		84095F3B1A2A9F3800956141 /* Build configuration list for PBXNativeTarget "macos-cross-macTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				84095F3C1A2A9F3800956141 /* Debug */,
