@@ -8,6 +8,7 @@
 
 #include <objc/message.h>
 #include <objc/runtime.h>
+#include <CoreGraphics/CoreGraphics.h>
 
 #ifndef CMACS_CMACSTYPES_H
 #define CMACS_CMACSTYPES_H
@@ -43,15 +44,28 @@ enum {
 };
 
 typedef id(*CMacsSimpleMessage)(id, SEL);
+
 typedef void(*CMacsVoidMessage)(id, SEL);
-typedef void(*CMacsVoidMessage1)(id, SEL, void *);
-typedef id(*CMacsRectMessage1)(id, SEL, CMRect);
-typedef id(*CMacsWindowInitMessage)(id, SEL, CMRect, int, int, bool);
+
+typedef void(*CMacsVoidMessageVoid)(id, SEL, void *);
+
+typedef id(*CMacsRectMessageCMRect)(id, SEL, CMRect);
+typedef id(*CMacsWindowInitMessageCMRect)(id, SEL, CMRect, int, int, bool);
+
+typedef id(*CMacsRectMessageCGRect)(id, SEL, CGRect);
+typedef id(*CMacsWindowInitMessageCGRect)(id, SEL, CGRect, int, int, bool);
 
 extern CMacsSimpleMessage cmacs_simple_msgSend;
-extern CMacsVoidMessage cmacs_void_msgSend;
-extern CMacsVoidMessage1 cmacs_void_msgSend1;
-extern CMacsRectMessage1 cmacs_rect_msgSend1;
-extern CMacsWindowInitMessage cmacs_window_init_msgSend;
+extern CMacsVoidMessage     cmacs_void_msgSend;
+extern CMacsVoidMessageVoid cmacs_void_msgSendVoid;
+
+extern CMacsRectMessageCMRect cmacs_void_msgSendCMRect;
+extern CMacsRectMessageCMRect cmacs_rect_msgSendCMRect;
+
+extern CMacsRectMessageCGRect cmacs_void_msgSendCGRect;
+extern CMacsRectMessageCGRect cmacs_rect_msgSendCGRect;
+
+extern CMacsWindowInitMessageCMRect cmacs_window_init_msgSendCMRect;
+extern CMacsWindowInitMessageCGRect cmacs_window_init_msgSendCGRect;
 
 #endif

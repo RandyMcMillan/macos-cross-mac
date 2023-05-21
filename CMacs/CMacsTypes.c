@@ -8,8 +8,16 @@
 
 #include "CMacsTypes.h"
 
-CMacsSimpleMessage cmacs_simple_msgSend = (CMacsSimpleMessage)objc_msgSend;
-CMacsVoidMessage cmacs_void_msgSend	 = (CMacsVoidMessage)objc_msgSend;
-CMacsVoidMessage1 cmacs_void_msgSend1 = (CMacsVoidMessage1)objc_msgSend;
-CMacsRectMessage1 cmacs_rect_msgSend1 = (CMacsRectMessage1)objc_msgSend;
-CMacsWindowInitMessage cmacs_window_init_msgSend = (CMacsWindowInitMessage)objc_msgSend;
+CMacsSimpleMessage cmacs_simple_msgSend         = (CMacsSimpleMessage)objc_msgSend;
+CMacsVoidMessage cmacs_void_msgSend             = (CMacsVoidMessage)objc_msgSend;
+CMacsVoidMessageVoid cmacs_void_msgSendVoid     = (CMacsVoidMessageVoid)objc_msgSend;
+
+CMacsRectMessageCMRect cmacs_void_msgSendCMRect = (CMacsRectMessageCMRect)objc_msgSend;
+CMacsRectMessageCMRect cmacs_rect_msgSendCMRect = (CMacsRectMessageCMRect)objc_msgSend;
+
+CMacsRectMessageCGRect cmacs_void_msgSendCGRect = (CMacsRectMessageCGRect)objc_msgSend;
+CMacsRectMessageCGRect cmacs_rect_msgSendCGRect = (CMacsRectMessageCGRect)objc_msgSend;
+
+
+CMacsWindowInitMessageCMRect cmacs_window_init_msgSendCMRect = (CMacsWindowInitMessageCMRect)objc_msgSend;
+CMacsWindowInitMessageCGRect cmacs_window_init_msgSendCGRect = (CMacsWindowInitMessageCGRect)objc_msgSend;
